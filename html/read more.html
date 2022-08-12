@@ -1,0 +1,53 @@
+<!doctypehtml>
+<html>
+<head>
+    <title>Read More</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#more {display: none;}
+</style>
+    <style>
+        { width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <center>
+    <pre><h2>The 2021 Hyundai Ioniq isn't flashy or exciting.
+Cute and boxy meets eco-friendly in the 2021 Kia Soul EV—the all-electric
+version of one of our favorite SUVs.<span id="dots">...</span><span id="more"> While it might be emissions free, the Soul
+EV isn't fun-free; its 201-hp electric motor maintains the perkiness we love about
+the regular Soul and its cheeky exterior makes it just as eye-catching. Lest you think
+the Soul EV is all style and no substance, Kia has blessed it with a large battery pack
+that can offer up to 243 miles of driving range on a full charge, making it a legitimate
+rival to popular EVs such as the Chevrolet Bolt EV, the Hyundai Kona Electric, and the Nissan Leaf Plus.</span></h2></pre>
+        <button name = "button" value = "OK" type = "button" class="btn btn-secondary  center  "onclick="myFunction()" id="myBtn">Read more</button></center>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>

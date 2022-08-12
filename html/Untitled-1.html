@@ -1,0 +1,38 @@
+<!doctypehtml>
+<html>
+<head>
+<meta http-equiv="refresh" content="300">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+</head>
+<body>
+    <div>This is some text in a div element.</div>
+    <embed type="text/html" src="https://cb2.scene7.com/is/image/CB2/SnakeTableLampSHF19/?$web_zoom$&190430165808&wid=450&hei=450"  width="500" height="200">
+       <div id='nav_login' class='w3-bar-block w3-card-2' style="display:none">
+      <span onclick='w3_close_nav("login")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
+      <div class="loginmodaldiv" style="padding:48px 16px 1px 16px;text-align:center;">
+        <h2>LOG IN</h2>
+        <div style="font-size:15px"><a href="https://mypage.w3schools.com/mypage/index.php">Why Log In?</a></div>
+        <div class="loginmodalform">
+          <form id="loginform" name="loginform" autocomplete="off" method="post">
+            <div><label>Username</label></div>
+            <div><input type="email" name="n" placeholder="Enter your e-mail address" onfocus="login_inputGetsFocus(this)"></div>
+            <br>
+            <div><label>Password</label></div>
+            <div><input type="password" name="p" placeholder="Enter Your Password" onfocus="login_inputGetsFocus(this)"></div>
+            <br>
+            <div id="loginerrordiv" style="display:none" class="w3-text-red"></div>
+            <div class="login_submit_container"><button id="login_submit_button" type="submit" onclick="login_user(event)">LOG IN</button></div>
+            <div style="overflow:auto;margin-top:10px;font-size:15px;">
+            <div class="login_newusertext">New User? <a href="https://mypage.w3schools.com/mypage/login.php?logintyp=1" target="_blank">Sign Up For Free!</a></div>
+            <div class="login_forgotpasswordtext"><a href="https://mypage.w3schools.com/mypage/forgot_password.php">Forgot password?</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br>
+    </div>
+
+
+</body>
+</html>
